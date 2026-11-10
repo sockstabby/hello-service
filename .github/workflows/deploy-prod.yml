@@ -21,7 +21,7 @@ jobs:
       packages: write         # add the release tag in GHCR
     uses: sockstabby/platform/.github/workflows/reusable-promote.yml@v1
     with:
-      image-name: app-template
+      image-name: hello-service
       source-tag: ${{ github.sha }}               # commit the release tag points at
       target-tag: ${{ github.event.release.tag_name }}
 
@@ -33,6 +33,6 @@ jobs:
     uses: sockstabby/platform/.github/workflows/reusable-deploy.yml@v1
     with:
       environment: production
-      image-name: app-template
+      image-name: hello-service
       image-tag: ${{ github.event.release.tag_name }}
       values-file: chart/values-prod.yaml

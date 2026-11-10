@@ -17,7 +17,7 @@ jobs:
       packages: write         # push to GHCR
     uses: sockstabby/platform/.github/workflows/reusable-build.yml@v1
     with:
-      image-name: app-template
+      image-name: hello-service
       image-tag: ${{ github.sha }}
       push: true
 
@@ -29,6 +29,6 @@ jobs:
     uses: sockstabby/platform/.github/workflows/reusable-deploy.yml@v1
     with:
       environment: debug
-      image-name: app-template
+      image-name: hello-service
       image-tag: ${{ github.sha }}
       values-file: chart/values-debug.yaml

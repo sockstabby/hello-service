@@ -19,7 +19,7 @@ jobs:
       contents: read          # build only; no push on PRs, so no packages: write
     uses: sockstabby/platform/.github/workflows/reusable-build.yml@v1
     with:
-      image-name: app-template
+      image-name: hello-service
       push: false
 
   chart-test:
@@ -27,4 +27,4 @@ jobs:
       contents: read
     uses: sockstabby/platform/.github/workflows/reusable-chart-test.yml@v1
     with:
-      release-name: app-template
+      release-name: hello-service

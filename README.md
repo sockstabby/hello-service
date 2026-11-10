@@ -1,4 +1,4 @@
-# app-template
+# hello-service
 
 GitHub template for a small FastAPI service deployed to EKS with Helm.
 CI/CD logic lives in [`sockstabby/platform`](https://github.com/sockstabby/platform) reusable workflows (`@v1`).

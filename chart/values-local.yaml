@@ -1,6 +1,6 @@
 # kind: image is built locally and side-loaded with `kind load docker-image`.
 image:
-  repository: app-template
+  repository: hello-service
   tag: local
   pullPolicy: Never
 env:

@@ -13,4 +13,4 @@ affinity:
           topologyKey: topology.kubernetes.io/zone
           labelSelector:
             matchLabels:
-              app.kubernetes.io/name: app-template
+              app.kubernetes.io/name: hello-service

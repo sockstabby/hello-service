@@ -1,5 +1,5 @@
 # Local dev loop on kind. Requires: docker, kind, kubectl, helm (see platform/.tool-versions).
-APP_NAME      ?= app-template
+APP_NAME      ?= hello-service
 CLUSTER       ?= $(APP_NAME)
 NAMESPACE     ?= default
 # kind v0.33.0 node image (digest from the kind release notes, verified 2026-11-09)

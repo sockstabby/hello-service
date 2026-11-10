@@ -2,7 +2,7 @@
 replicaCount: 1
 
 image:
-  repository: ghcr.io/sockstabby/app-template
+  repository: ghcr.io/sockstabby/hello-service
   tag: ""            # set by the deploy workflow (git SHA for debug, release tag for prod)
   pullPolicy: IfNotPresent
 
